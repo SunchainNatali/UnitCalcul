@@ -20,5 +20,8 @@
     <Reference Include="Unit">
       <HintPath>..\..\Unit\Unit\bin\Debug\Unit.exe</HintPath>
     </Reference>
+    <Reference Include="Unit">
+      <HintPath>..\..\..\..\..\Projects\Unit\Unit\bin\Debug\Unit.exe</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>
