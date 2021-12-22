@@ -8,7 +8,7 @@ namespace Unit
         public static void Main(string[] args)
         {
             
-            Console.WriteLine("Input the operation: ");
+            Console.WriteLine($"Input the operation: \n + \n - \n * \n / \n ^ ");
                     
             char str = Console.ReadLine().Trim()[0];
             double num1;
@@ -46,7 +46,7 @@ namespace Unit
                 case '^':
                     Console.WriteLine("Input the number: ");
                     num1 = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine(SimpleCalculator.KvadrKoren(num1));
+                    Console.WriteLine(SimpleCalculator.Square(num1));
                     break;
             }
            

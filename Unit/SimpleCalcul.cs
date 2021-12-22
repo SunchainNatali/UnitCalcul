@@ -28,7 +28,7 @@ namespace Unit
                 }
                 return a / b;
             }
-            public static double KvadrKoren(double a)
+            public static double Square(double a)
 
             {
                 if (a < 0)
