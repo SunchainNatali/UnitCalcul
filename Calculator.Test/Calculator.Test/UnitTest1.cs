@@ -63,19 +63,19 @@ namespace Calculator.Test
         }
 
         [Fact]
-        public void Test6()
+        public void DivideZeroTest()
         {
-            string actualsms = "Делить на ноль нельзя";
-            var expectresult = Assert.Throws<DivideByZeroException>(() => SimpleCalculator.Delen(30, 0));
-            Assert.Equal(actualsms, expectresult.Message);
+            Action action = () => SimpleCalculator.Delen(30, 0);
+            Assert.Throws<DivideByZeroException>(action);
+           
         }
 
         [Fact]
-        public void Test7()
+        public void NegativSquareTest()
         {
-            string actualsms = "Корень из отрицательного не возможен";
-            var expectresult = Assert.Throws<ArgumentException>(() => SimpleCalculator.Square(-1));
-            Assert.Equal(actualsms, expectresult.Message);
+            Action action = () => SimpleCalculator.Square(-1);
+            Assert.Throws<ArgumentException>(action);
+           
         }
     }
 }
