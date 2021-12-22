@@ -30,7 +30,6 @@ namespace Calculator.Test
             Assert.Equal(expectedResult, actual);
         }
 
-
         [Theory]
         [InlineData(5, 5, 25)]
         [InlineData(2, 0, 0)]
@@ -66,8 +65,6 @@ namespace Calculator.Test
         [Fact]
         public void Test6()
         {
-            //double a = 30;
-            //double b = 0;
             string actualsms = "Делить на ноль нельзя";
             var expectresult = Assert.Throws<DivideByZeroException>(() => SimpleCalculator.Delen(30, 0));
             Assert.Equal(actualsms, expectresult.Message);
@@ -76,7 +73,6 @@ namespace Calculator.Test
         [Fact]
         public void Test7()
         {
-            //double a = -1;
             string actualsms = "Корень из отрицательного не возможен";
             var expectresult = Assert.Throws<ArgumentException>(() => SimpleCalculator.Square(-1));
             Assert.Equal(actualsms, expectresult.Message);
